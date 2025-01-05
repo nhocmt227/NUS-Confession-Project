@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs", {title: "College of Design & Engineering", topic: "engineering"}) %>
+
+<% for (let i = 0; i < data.length; i++) { %>
+    <% const topic = data[i]["topic"]; %>
+    <% const name = data[i]["name"]; %>
+    <% const content = data[i]["content"]; %>
+    <h1><%= topic %></h1>
+    <h2><%= name %></h2>
+    <p><%= content %></p>
+    <br>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs", {title: "Create Your Post", topic: "create"}) %>
+
+<!-- Topic: dropdown,
+Author: form(name)
+Checkbox: anonymous author (on-check disable author name) 
+Content: form -->
+
+<div class="container px-5">
+    <form action="/create" method="POST" id="form">
+        <div class="mb-3">
+            <label for="topic" class="form-label">Topic: </label>
+            <select name="topic" id="topic" class="form-select" aria-label="Default select example">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="fass">Faculty of Arts & Social Sciences</option>
+                <option value="business">Business School</option>
+                <option value="computing">School of Computing</option>
+                <option value="engineering">College of Design & Engineering</option>
+                <option value="science">Faculty of Science</option>
+                <option value="medicine">School of Medicine</option>
+                <option value="law">Faculty of Law</option>
+            </select>
+            <div class="invalid-feedback" id="invalidTopic" hidden>
+                Please choose a topic.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name: </label>
+            <input type="text" name="name" id="name" class="form-control">
+            <div class="invalid-feedback" id="invalidName" hidden>
+                Please choose a username.
+            </div>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="anonimous" class="form-check-input">
+            <label class="form-check-label">Anonimous user</label>
+        </div>
+        <div class="mb-3">
+            <textarea type="text" name="content" id="content" class="form-control" rows="20" placeholder="Write your post here"></textarea>
+            <div class="invalid-feedback" id="invalidContent" hidden>
+                Your post should be longer than 10 words.
+            </div>
+        </div>
+        <div class="mb-3">
+            <button id="create-post-button" type="submit" class="btn btn-primary">Create post</button>
+        </div>
+    </form>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Post created successfully
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="firstButton">Close</button>
+              <button type="button" class="btn btn-primary" id="secondButton">Go to home page</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="/script_create.js"></script>
+<%- include("partials/footer.ejs") %>
