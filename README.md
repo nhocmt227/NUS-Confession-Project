@@ -1,6 +1,7 @@
 - Usage:
     - Clone the repository: `git clone https://github.com/nhocmt227/NUS-Confession-Project.git`
-    - Initialize npm packages and dependency: `npm init`
+    - Go to the directory: `cd NUS-Confession-Project/`
+    - Initialize npm packages and dependency: `npm i`
     - Start the server: `node index.js`
     - View the page as client: `localhost:3000`. You can use any browser to run the view the page.
 
