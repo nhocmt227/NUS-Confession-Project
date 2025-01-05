@@ -1,8 +1,9 @@
 - Usage:
-    - Clone the repository: git clone https://github.com/nhocmt227/NUS-Confession-Project.git
-    - Initialize npm packages and dependency: npm init
-    - Start the server: node index.js
-    - View the page as client: localhost:3000
+    - Clone the repository: `git clone https://github.com/nhocmt227/NUS-Confession-Project.git`
+    - Initialize npm packages and dependency: `npm init`
+    - Start the server: `node index.js`
+    - View the page as client: `localhost:3000`. You can use any browser to run the view the page.
+
 
 - Motivation: To create an environment where college students can share different perspectives and opinions about the university they are studying in. The topic involves both from academic side and uni-life experience, covering all faculties and departments.
 - Feature:
