@@ -1,4 +1,9 @@
-- Status: incomplete (70%)  
+- Status: incomplete (70%)
+
+- Motivation: To create an environment where college students can share different perspectives and opinions about the university they are studying in. The topic involves both from academic side and uni-life experience, covering all faculties and departments.
+
+- Feature:
+    - User can create, view, update, delete posts.
 
 - Usage:
     - Clone the repository: `git clone https://github.com/nhocmt227/NUS-Confession-Project.git`
@@ -7,10 +12,11 @@
     - Start the server: `node index.js`
     - View the page as client: `localhost:3000`. You can use any browser to run the view the page.
 
-
-- Motivation: To create an environment where college students can share different perspectives and opinions about the university they are studying in. The topic involves both from academic side and uni-life experience, covering all faculties and departments.
-- Feature:
-    - User can create, view, update, delete posts.
+- Technology:
+    - Front-end: HTML, CSS,  Bootstrap
+    - Back-end: JavaScript, NodeJS, Express, EJS
+    - Database: Current version does not have
+ 
 - Section:
     - NavBar:
         - HomePage
@@ -22,8 +28,4 @@
         - Medicine
         - Law
     - Footer: Normal footer
-- HomePage: show high-interacted posts
-- Technology:
-    - Front-end: HTML, CSS,  Bootstrap
-    - Back-end: JavaScript, NodeJS, Express, EJS
-    - Database: Current version does not have
+
