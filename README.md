@@ -1,3 +1,5 @@
+- Status: incomplete (70%)  
+
 - Usage:
     - Clone the repository: `git clone https://github.com/nhocmt227/NUS-Confession-Project.git`
     - Go to the directory: `cd NUS-Confession-Project/`
